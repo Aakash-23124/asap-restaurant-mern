@@ -104,7 +104,7 @@ export default function BookTable() {
 
     try {
       // change URL 
-      await axios.post('http://localhost:5000/api/book-table', formData);
+      await axios.post('https://asap-restaurant-mern.onrender.com/api/book-table', formData);
       toast.success('Table booked successfully!');
       setFormData({ name: '', email: '', date: '', time: '', guests: '' });
     } catch (error) {
